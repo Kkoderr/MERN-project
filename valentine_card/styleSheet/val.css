@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --zindex : 3;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    z-index: 10;
+    background-color: #f2acac;
+}
+
+.photo{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 8;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#p1{
+    transform: rotate(-15deg);
+    
+}
+
+input#pslide1{
+    display: none;
+}
+.pslide1{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    z-index: 9;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+#pslide1:checked ~ #p1{
+    transform: translate(-200px , -200px);
+    transition: 1s;
+    z-index: -1;
+    box-shadow: 0px 0px 10px;
+}
+#pslide1:checked ~ .pslide1{
+    z-index: -1;
+}
+#pslide1:checked ~ .pslide2{
+    z-index: 9;
+}
+
+#p2{
+    transform: rotate(15deg);
+}
+
+input#pslide2{
+    display: none;
+}
+.pslide2{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    z-index: -1;
+    cursor: pointer;
+    background-color: transparent;
+}
+#pslide2:checked ~ #p2{
+    transform: translate(200px,-200px);
+    transition: 1s;
+    z-index: -1;
+    box-shadow: 0px 0px 10px;
+}
+#pslide2:checked ~ .pslide2{
+    z-index: -1;
+}
+#pslide2:checked ~ .pslide3{
+    z-index: 9;
+}
+
+#p3{
+    transform: rotate(2deg);
+}
+input#pslide3{
+    display: none;
+}
+.pslide3{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    z-index: -1;
+    cursor: pointer;
+    background-color: transparent;
+}
+#pslide3:checked ~ #p3{
+    transform: translate(-200px,200px);
+    transition: 1s;
+    z-index: -1;
+    box-shadow: 0px 0px 10px;
+}
+#pslide3:checked ~ .pslide3{
+    z-index: -1;
+}
+#pslide3:checked ~ .pslide4{
+    z-index: 9;
+}
+
+#p4{
+    transform: rotate(-20deg);
+}
+input#pslide4{
+    display: none;
+}
+.pslide4{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    cursor: pointer;
+    background-color: transparent;
+}
+#pslide4:checked ~ #p4{
+    transform: translate(200px,200px);
+    transition: 1s;
+    z-index: -1;
+    box-shadow: 0px 0px 10px;
+}
+#pslide4:checked ~ .pslide4{
+    z-index: -1;
+}
+#pslide4:checked ~ .pslide5{
+    z-index: 9;
+}
+#pslide4:checked ~ .open{
+    z-index: 9;
+}
+
+input#pslide5{
+    display:none;
+}
+.pslide5{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+
+.envelope{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px;
+    border: 2px solid;
+}
+
+#back{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    z-index: 1;
+}
+
+.flip{
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-color: brown;
+    border: 2px solid;
+    border-radius: 10% 0 0 0 ;
+    transform: translateY(-71.6%) rotate(45deg);
+    z-index: 1;
+    box-shadow: 0px 0px 20px;
+}
+
+input#open{
+    display: none;
+}
+
+#card{
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    background-color: antiquewhite;
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card h3{
+    text-align: center;
+}
+
+#card .content{
+    height: 100%;
+    width: 100%;
+    border: 2px dashed;
+    border-radius: 6px;
+    display:grid;
+    padding: 20px;
+    grid-template-rows: repeat((7,1fr));
+    background-color: rgba(0,0,0,0.1);
+}
+
+#card .content .choice{
+    display: flex;
+    height:20px ;
+    justify-content: space-evenly;
+    z-index: 5;
+}
+
+#yes{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#no{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.open{
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 350px;
+    z-index: -1;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#open:checked ~ #card{
+    transition: 2s;
+    transform: translateY(-200px);
+    box-shadow: 0px 0px 15px;
+}
+
+#left{
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    background-color: brown;
+    z-index: 3;
+    transform: rotate(45deg) translateY(209px) translateX(-88px);
+    border: 2px solid;
+
+}
+
+#right{
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    background-color: firebrick;
+    z-index: 3;
+    border: 2px solid;
+    transform: rotate(45deg) translateY(0px) translateX(122px);
+}
+
+#heart{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: pink;
+    z-index: 3;
+    transform: rotate(45deg);
+}
+#heart::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    top: -17px;
+}
+
+#heart::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    left: -17px;
+
+}
