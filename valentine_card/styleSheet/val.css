@@ -137,7 +137,6 @@ input#pslide4{
     transform: translate(150px,100px);
     transition: 1s;
     z-index: -1;
-    filter:blur(3px);
     box-shadow: 0px 0px 10px;
 }
 #pslide4:checked ~ .pslide4{
@@ -156,6 +155,9 @@ input#pslide4{
   filter:blur(3px);
 }
 #pslide4:checked ~ #p1{
+  filter:blur(3px);
+}
+#pslide4:checked ~ #p4{
   filter:blur(3px);
 }
 
