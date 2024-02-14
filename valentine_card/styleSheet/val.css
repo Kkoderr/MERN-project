@@ -46,7 +46,7 @@ input#pslide1{
 
 #pslide1:checked ~ #p1{
     transform: translate(-150px , -100px);
-    filter:blur(70%);
+    filter:blur(3px);
     transition: 1s;
     z-index: -1;
     box-shadow: 0px 0px 10px;
@@ -76,7 +76,7 @@ input#pslide2{
 #pslide2:checked ~ #p2{
     transform: translate(150px,-100px);
     transition: 1s;
-    filter:blur(70%);
+    filter:blur(3px);
     z-index: -1;
     box-shadow: 0px 0px 10px;
 }
@@ -104,7 +104,7 @@ input#pslide3{
 #pslide3:checked ~ #p3{
     transform: translate(-150px,100px);
     transition: 1s;
-    filter:blur(70%);
+    filter:blur(3px);
     z-index: -1;
     box-shadow: 0px 0px 10px;
 }
@@ -133,7 +133,7 @@ input#pslide4{
     transform: translate(150px,100px);
     transition: 1s;
     z-index: -1;
-    filter:blur(70%);
+    filter:blur(3px);
     box-shadow: 0px 0px 10px;
 }
 #pslide4:checked ~ .pslide4{
