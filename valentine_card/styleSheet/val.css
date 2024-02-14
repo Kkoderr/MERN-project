@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --zindex : 3;
 }
 
 .container{
@@ -394,7 +393,7 @@ input#open{
 
 .choice{
     position: absolute;
-    height: 105px;
+    height: 70px;
     width: 100vw;
     display: none;
     justify-items: center;
