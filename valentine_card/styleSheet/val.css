@@ -20,8 +20,8 @@
 
 .photo{
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     z-index: 8;
     object-fit: cover;
     border-radius: 3px;
@@ -394,7 +394,7 @@ input#open{
 
 .choice{
     position: absolute;
-    height: 70px;
+    height: 105px;
     width: 100vw;
     display: none;
     justify-items: center;
@@ -403,6 +403,10 @@ input#open{
     row-gap: 5px;
     transform: translateY(250px);
     z-index: -1;
+}
+
+h4{
+    
 }
 
 #c1{
