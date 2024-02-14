@@ -237,7 +237,7 @@ input#open{
 
 .open{
     position: absolute;
-    top: 250px;
+    top: 400px;
     width: 200px;
     height: 250px;
     z-index: -1;
@@ -402,6 +402,7 @@ input#open{
     row-gap: 5px;
     transform: translateY(250px);
     z-index: -1;
+    border : 2px solid;
 }
 
 h4{
