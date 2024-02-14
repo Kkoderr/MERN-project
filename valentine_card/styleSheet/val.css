@@ -237,7 +237,7 @@ input#open{
 
 .open{
     position: absolute;
-    top: 100px;
+    top: 150px;
     width: 200px;
     height: 250px;
     z-index: -1;
